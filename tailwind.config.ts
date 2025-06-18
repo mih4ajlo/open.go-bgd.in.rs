@@ -24,16 +24,35 @@ module.exports = {
       '2k': '2500px',
     },
 
+  
     extend: {
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        btn: {
-          background: "hsl(var(--btn-background))",
-          "background-hover": "hsl(var(--btn-background-hover))",
+
+        background: '#FAF5EF',
+        foreground: '#F0E5D8',
+        // Serbian Flag
+        serbian: {
+          red: '#BE1E2D',     // Strong Serbian red
+          blue: '#002F6C',    // Deep Serbian blue
+          white: '#FFFFFF',   // Standard white
+        },
+        // Neutral Backgrounds
+        neutral: {
+          bg: '#FAF5EF',      // Light cream background
+          panel: '#F0E5D8',   // Warm wood panel background
+          text: '#222222',    // Primary text
+        },
+        // Go Elements
+        go: {
+          blackStone: '#1B1B1B',
+          whiteStone: '#F5F5F5',
+          board: '#D7AD7B',   // Go board tone
+          grid: '#3C3C3C',    // Go board line color
         },
       },
     },
+  
+
   },
   plugins: [],
 };
