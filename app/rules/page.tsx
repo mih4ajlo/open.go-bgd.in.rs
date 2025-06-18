@@ -13,10 +13,11 @@ export default function page() {
         <li className="py-2">
           Participation fee:
           <ul>
-            <li>Before 15th of July: 20€</li>
-            <li>After 15th of July: 25€</li>
-            <li>For members of Serbian Go federation: 15€</li>
-            <li>After 15th of July : 20€</li>
+            <li>Before 15th of July: 15€</li>
+            <li>Before 1st of October: 20€</li>
+            <li>After 1st of October: 25€</li>
+            <li>For members of Serbian Go federation: 10€ - 15€ - 20€</li>
+            
           </ul>
         </li>
 
