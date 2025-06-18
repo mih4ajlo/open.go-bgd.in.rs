@@ -7,8 +7,20 @@ import classes from "./header.module.css";
 
 export default function Menu() {
   const [clicked, setClicked] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const menuRef = useRef(true);
   const pathname = usePathname(); // gets the current path
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768); // 48em = 768px
+    };
+    
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   // Close menu on outside click
   useEffect(() => {
@@ -42,7 +54,10 @@ export default function Menu() {
         <label className={classes.menuIcon} htmlFor="menuBtn">
           <span className={classes.navicon}></span>
         </label>
-        <ul className={classes.menu} style={{ display: clicked ? "block" : "none" }}>
+        <ul 
+          className={classes.menu} 
+          style={{ display: isMobile && !clicked ? "none" : "block" }}
+        >
           <li>
             <Link href="/">Home</Link>
           </li>

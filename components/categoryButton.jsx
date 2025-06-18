@@ -1,6 +1,11 @@
 export default function categoryButton({name, handleChange}) {
   return (
-    <select name={name} onChange={handleChange} required>
+    <select 
+      name={name} 
+      onChange={handleChange} 
+      required
+      className="w-full px-4 py-2 rounded-lg border border-go-grid/30 bg-neutral-panel text-neutral-text focus:border-serbian-red focus:outline-none focus:ring-2 focus:ring-serbian-red/20 transition-all duration-200"
+    >
       <option value=""></option>
       <option value="22k">22k</option>
       <option value="21k">21k</option>

@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-
 import kalisPic from "../public/slike/ljepava_kalemegdan.jpg";
 import GoPic from "../public/slike/go_tabla.jpg";
 
@@ -8,7 +7,7 @@ import classes from "./header.module.css";
 
 export default function Header() {
   return (
-    <div className="flex flex-col gap-16 items-center">
+    <div className="flex flex-col gap-16 items-center ">
       <div className="flex gap-8 justify-center items-center">
         {/* <Image src={holPic} alt="asd" width={400} height={400} /> */}
 
@@ -35,13 +34,12 @@ export default function Header() {
       <h1 className="sr-only">Belgrade open 2025 page</h1>
 
       <div className="text-2xl  lg:text-4xl !leading-tight mx-auto max-w-[70rem] text-center">
-        <p className="text-3xl font-bold mb-4">
-         Belgrade open 2025
+        <p className="text-heading text-3xl font-bold mb-4">
+          Belgrade open 2025
         </p>
-        
       </div>
 
-      <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-2" />
+      <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-go-grid/30 to-transparent my-2" />
     </div>
   );
 }

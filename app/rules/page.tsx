@@ -11,30 +11,30 @@ export default function page() {
           participants).
         </li>
         <li className="py-2">
-          Participation: 20€ fee per person. For member of Serbian Go federation
-          15€ per person.
+          Participation fee:
+          <ul>
+            <li>Before 15th of July: 20€</li>
+            <li>After 15th of July: 25€</li>
+            <li>For members of Serbian Go federation: 15€</li>
+            <li>After 15th of July : 20€</li>
+          </ul>
         </li>
 
         <li>
-          
           <div className="flex gap-8 mt-8">
-
-          <ol className="">
-            Saturday:
-            <li>End of registration: 9:30 </li>
-            <li>I round : 10:00 - 12:30</li>
-            <li>II round : 13:30 - 15:30</li>
-            <li>III round : 16:00 - 18:30</li>
-            
-          </ol>
-          <ol>
-            Sunday:
-            <li>IV round : 10:00 - 12:30</li>
-            <li>V round : 13:30 - 15:30</li>
-            
-          </ol>
+            <ol className="">
+              Saturday:
+              <li>End of registration: 9:30 </li>
+              <li>I round : 10:00 - 12:30</li>
+              <li>II round : 13:30 - 15:30</li>
+              <li>III round : 16:00 - 18:30</li>
+            </ol>
+            <ol>
+              Sunday:
+              <li>IV round : 10:00 - 12:30</li>
+              <li>V round : 13:30 - 15:30</li>
+            </ol>
           </div>
-
         </li>
         <li className="py-2">
           Prizes:

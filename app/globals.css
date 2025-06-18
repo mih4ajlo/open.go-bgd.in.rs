@@ -4,10 +4,13 @@
 
 @layer base {
   :root {
-    --background: 0 50% 3%;
-    --btn-background: 200 10% 9%;
-    --btn-background-hover: 200 10% 12%;
-    --foreground: 200 20% 96%;
+    /* Using your custom colors from tailwind.config.ts */
+    --background: 250 250 250; /* background: #FAF5EF */
+    --foreground: 240 240 240; /* foreground: #F0E5D8 */
+    --btn-background: 190 30 40; /* serbian-red: #BE1E2D */
+    --btn-background-hover: 0 47 108; /* serbian-blue: #002F6C */
+    --text-primary: 34 34 34; /* neutral-text: #222222 */
+    --panel-bg: 240 240 240; /* neutral-panel: #F0E5D8 */
   }
 
   /* @media (prefers-color-scheme: light) {
@@ -23,19 +26,111 @@
 
 @layer base {
   * {
-    @apply border-foreground/20;
+    @apply border-neutral-text/20;
+  }
+  
+  body {
+    @apply bg-background text-neutral-text;
   }
 }
 
+@layer components {
+  /* Button Components using your custom colors */
+  .btn {
+    @apply font-bold py-4 px-4 rounded max-w-[40rem] transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-serbian-red text-white hover:bg-serbian-blue;
+  }
+  
+  .btn-secondary {
+    @apply bg-neutral-panel text-neutral-text hover:bg-go-board border border-go-grid;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border-2 border-serbian-red text-serbian-red hover:bg-serbian-red hover:text-white;
+  }
+  
+  /* Card Components */
+  .card {
+    @apply bg-neutral-panel rounded-lg shadow-md p-6 border border-go-grid/20;
+  }
+  
+  .card-elevated {
+    @apply bg-neutral-panel rounded-lg shadow-lg p-6 border border-go-grid/30 hover:shadow-xl transition-shadow duration-200;
+  }
+  
+  /* Text Components */
+  .text-heading {
+    @apply text-neutral-text font-bold;
+  }
+  
+  .text-body {
+    @apply text-neutral-text/90;
+  }
+  
+  .text-accent {
+    @apply text-serbian-red;
+  }
+  
+  /* Background Components */
+  .bg-primary {
+    @apply bg-background;
+  }
+  
+  .bg-secondary {
+    @apply bg-neutral-panel;
+  }
+  
+  .bg-accent {
+    @apply bg-serbian-red;
+  }
+  
+  /* Border Components */
+  .border-primary {
+    @apply border-go-grid;
+  }
+  
+  .border-accent {
+    @apply border-serbian-red;
+  }
+  
+  /* Go-specific components */
+  .go-stone-black {
+    @apply bg-go-blackStone text-go-whiteStone;
+  }
+  
+  .go-stone-white {
+    @apply bg-go-whiteStone text-go-blackStone border border-go-grid;
+  }
+  
+  .go-board {
+    @apply bg-go-board;
+  }
+}
 
-.btn {
-  @apply font-bold py-4 px-4 rounded max-w-[40rem];
+@layer utilities {
+  /* Custom utility classes for your colors */
+  /* .text-serbian-red { @apply text-serbian-red; }
+  .text-serbian-blue { @apply text-serbian-blue; }
+  .text-go-black { @apply text-go-blackStone; }
+  .text-go-white { @apply text-go-whiteStone; }
+  
+  .bg-serbian-red { @apply bg-serbian-red; }
+  .bg-serbian-blue { @apply bg-serbian-blue; }
+  .bg-go-black { @apply bg-go-blackStone; }
+  .bg-go-white { @apply bg-go-whiteStone; }
+  .bg-go-board { @apply bg-go-board; }
+  
+  .border-serbian-red { @apply border-serbian-red; }
+  .border-serbian-blue { @apply border-serbian-blue; }
+  .border-go-grid { @apply border-go-grid; } */
 }
+
+/* Legacy button styles for backward compatibility */
 .btn-blue {
-  @apply bg-blue-500 text-white;
-}
-.btn-blue:hover {
-  @apply bg-blue-700;
+  @apply bg-serbian-blue text-white hover:bg-serbian-red;
 }
 
 td, th {

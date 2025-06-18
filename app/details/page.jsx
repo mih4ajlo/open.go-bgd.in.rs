@@ -4,7 +4,7 @@ import mapa from "../../public/slike/mapa.png";
 
 export default function page() {
   return (
-    <div className="sm:w-2/3 w-1/3 m-auto">
+    <div className="sm:w-2/3 w-1/2 m-auto">
       <div>
         <h1 className="text-[2rem] pb-2">Venue</h1>
 
@@ -20,7 +20,7 @@ export default function page() {
 
         <p>Address: Zdravka Čelara 14</p>
         <a href="https://maps.app.goo.gl/GNT99aZKgN75fRkG6s">
-          <Image src={mapa} width={"w-1/3"} />
+          <Image src={mapa} width={"w-1/3"} alt="mapa" />
         </a>
       </div>
       <div>
