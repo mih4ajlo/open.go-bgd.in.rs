@@ -35,7 +35,7 @@ export default function Header() {
 
       <div className="text-2xl  lg:text-4xl !leading-tight mx-auto max-w-[70rem] text-center">
         <p className="text-heading text-3xl font-bold mb-4">
-          Belgrade open 2025, 18.10 19.10.2025
+          Belgrade open 2025, 18.10 - 19.10.2025
         </p>
       </div>
 
