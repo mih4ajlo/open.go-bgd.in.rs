@@ -101,22 +101,14 @@ const renderTable = (data = []) => {
   );
 };
 
-export default function Participants() {
-  
-  const getParticipants = async () => {
-    "use server";
+export default async function Participants() {
+  const supabase = await createClient();
 
-    const supabase = createClient();
+  const { data: participants } = await supabase.from("bg_open_participants")
+    .select()
+    .limit(50);
 
-    const { data: participants } = await supabase
-      .from("bg_open_participants")
-      .select()
-      .limit(50);
+  console.log(participants);
 
-    return renderTable(participants);
-  };
-
-  let resp = getParticipants();
-
-  return <>{resp}</>;
+  return renderTable(participants || []);
 }
