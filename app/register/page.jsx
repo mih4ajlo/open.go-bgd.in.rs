@@ -20,7 +20,7 @@ const RegisterOpen = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    //console.log(formData);
 
     const res = registerForOpen( formData );
     setSubmitFlag(res);

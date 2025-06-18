@@ -108,7 +108,7 @@ export default async function Participants() {
     .select()
     .limit(50);
 
-  console.log(participants);
+  //console.log(participants);
 
   return renderTable(participants || []);
 }
