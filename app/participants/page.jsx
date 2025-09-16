@@ -81,7 +81,7 @@ const renderTable = (data = []) => {
         <div className="card">
           <h1 className="text-heading text-3xl mb-6 text-center">Registered Participants</h1>
           
-          <div className="overflow-x-auto">
+          <div className="max-w-[100vw] overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>{headJ}</thead>
               <tbody>{bodJ}</tbody>
