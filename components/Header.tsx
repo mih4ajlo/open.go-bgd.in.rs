@@ -17,7 +17,7 @@ export default function Header() {
         <div className="relative">
           <Image
             src={kalisPic}
-            alt="novi sad square"
+            alt="kalemegdan fortress"
             width={800}
             className={`${classes.mask} `}
           />
@@ -31,11 +31,11 @@ export default function Header() {
       </div>
 
       {/* <Image src={centarPic} alt="asd" width={1200} height={400} className={classes.mask} /> */}
-      <h1 className="sr-only">Belgrade open 2025 page</h1>
+      <h1 className="sr-only">Belgrade open 2026 page</h1>
 
       <div className="text-2xl  lg:text-4xl !leading-tight mx-auto max-w-[70rem] text-center">
         <p className="text-heading text-3xl font-bold mb-4">
-          Belgrade open 2025, 18.10 - 19.10.2025
+          Belgrade open 2026, 17.10 - 18.10.2025
         </p>
       </div>
 

@@ -104,7 +104,7 @@ const renderTable = (data = []) => {
 export default async function Participants() {
   const supabase = await createClient();
 
-  const { data: participants } = await supabase.from("bg_open_participants")
+  const { data: participants } = await supabase.from("bg_open_participants_2026")
     .select()
     .limit(50);
 

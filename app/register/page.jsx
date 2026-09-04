@@ -39,7 +39,7 @@ const RegisterOpen = () => {
       {!submitedFlag && (
         <div className="max-w-2xl mx-auto px-4">
           <div className="card">
-            <h1 className="text-heading text-3xl mb-6 text-center">Register for Belgrade Open 2025</h1>
+            <h1 className="text-heading text-3xl mb-6 text-center">Register for Belgrade Open 2026</h1>
             
             <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
               <div className={classes.row}>
