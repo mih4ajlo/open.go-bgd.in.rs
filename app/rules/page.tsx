@@ -5,18 +5,18 @@ export default function page() {
     <div className="w-1/2 m-auto">
       <ul>
         <li className="py-2">
-          Rules: The tournament consists of five rounds McMahon with Candian
-          time, 1 hour basic and 5 minutes for 10 moves, komi 6,5 points.
+          Rules: The tournament consists of five rounds McMahon with Fisher time 45 min + 15s/move (or Candian
+          time, 1 hour basic and 5 minutes for 10 moves), komi 6,5 points.
           Japanese/EGF rules (subject to changes depending on the number of
           participants).
         </li>
         <li className="py-2">
           Participation fee:
           <ul>
-            <li>Before 15th of July: 15€</li>
-            <li>Before 1st of October: 20€</li>
-            <li>After 1st of October: 25€</li>
-            <li>For members of Serbian Go federation: 10€ - 15€ - 20€</li>
+            
+            <li>Before 1st of October: 20€, 15€ for members of Serbian Go Federation</li>
+            <li>After 1st of October: 25€, 20€ for members of Serbian Go Federation</li>
+            <li>After 15th of October: 30€, 25€ for members of Serbian Go Federation</li>
             
           </ul>
         </li>

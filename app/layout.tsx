@@ -9,12 +9,12 @@ const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "http://localhost:3000";
 
-const titleStr = "Belgrade open 2025";
+const titleStr = "Belgrade open 2026";
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
   title: titleStr,
-  description: "Belgrade open 2025 in Belgrade, Serbia",
+  description: "Belgrade open 2026 in Belgrade, Serbia",
 };
 
 export default function RootLayout({
