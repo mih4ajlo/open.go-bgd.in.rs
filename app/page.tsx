@@ -6,8 +6,8 @@ export default async function Index() {
       <div className="flex-1 flex flex-col gap-20 w-8/12 max-w-[99vw] px-3">
         <div className="card">
           <p className="text-body leading-relaxed">
-            The 47th Belgrade Go Tournament will take place from October 18th to
-            19th, set in one of Europe's most dynamic cities, adding to the
+            The 48th Belgrade Open Go Tournament will take place from <br /> October 17th to
+            18th, set in one of Europe's most dynamic cities, adding to the
             excitement of the event. Belgrade, known for its rich history and
             vibrant culture, offers players and visitors a chance to explore its
             lively streets, historical landmarks, and unique blend of old-world
