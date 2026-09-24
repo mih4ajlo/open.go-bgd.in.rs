@@ -73,6 +73,9 @@ export default function Menu() {
           <li>
             <Link href="/details">Other info</Link>
           </li>
+          <li>
+            <Link href="/sponsor">Sponsor</Link>
+          </li>
         </ul>
       </div>
     </header>
