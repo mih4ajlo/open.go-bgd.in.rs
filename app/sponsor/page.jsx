@@ -9,7 +9,7 @@ export default function page() {
         <h1 className="text-[2rem] pb-4">Sponsor</h1>
 
         <a
-          href="https://kifu-master.com/"
+          href="https://kifumaster.org/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block mb-4"
@@ -18,16 +18,22 @@ export default function page() {
         </a>
 
         <p className="pb-4">
-          Kifu Master is proud to support Belgrade Open 2026. What we'd like
-          to offer:
+          We are delighted to announce additional prizes provided by Kifu
+          Master, a professional Go game database for web and Android:
         </p>
 
         <ul className="list-disc list-inside pb-4">
-          <li>1st place: 3 years of free Kifu Master Premium</li>
-          <li>2nd place: 2 years of free Premium</li>
-          <li>3rd place: 1 year of free Premium</li>
-          <li>Every participant: 2 months of free Premium</li>
+          <li>1st place — 3 years of Kifu Master Premium</li>
+          <li>2nd place — 2 years of Kifu Master Premium</li>
+          <li>3rd place — 1 year of Kifu Master Premium</li>
+          <li>Every participant — 2 months of Kifu Master Premium</li>
         </ul>
+
+        <p className="pb-4">
+          Kifu Master lets you search professional games by player or
+          tournament, replay them with Guess the Move, and explore positions
+          with Kifu Master&apos;s Go Pattern Search — coming very soon!
+        </p>
       </div>
     </div>
   );
